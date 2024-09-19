@@ -1,0 +1,12 @@
+---
+- name: Patch high vpr openssh vuln
+  hosts: rhel_servers
+  vars_files:
+    - vars.yml
+
+  tasks:
+    - name: Install the desired version of the package
+      yum:
+        name: "{{ full_package_name }}"
+        state: present
+

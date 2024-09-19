@@ -1,0 +1,6 @@
+# vars.yml
+package_name: "openssh"
+current_version: "8.7p1-38.el9"
+desired_version: "8.7p1-38.el9_4.4"
+full_package_name: "{{ package_name }}-{{ desired_version }}"
+
