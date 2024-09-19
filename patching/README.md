@@ -39,10 +39,10 @@
   ```
 * Conduct a vulnerability scan with nessus as it provides a free version.
 
-  ![Hosts](/home/sa-ki/ansible-lab/patching/hosts.png)
+  ![Hosts](hosts.png)
 * From the scan we could see that openssh has the highest VPR score of 9.5, so we will be patching that vulnerability for our project.
 
-  ![pre patching](/home/sa-ki/ansible-lab/patching/pre-patching.png)
+  ![pre patching](pre-patching.png)
 * Create a external vars file which will host the package name and the version we want to update the package to remediate the vulnerability.
 
   ```
@@ -60,6 +60,6 @@
 
   we can run it in dry mode to check if there are any issues with the playbook by passing in --syntax-check and --check arguments
 
-  ![post patching](/home/sa-ki/ansible-lab/patching/post-patching.png)
+  ![post patching](post-patching.png)
 
 ---
